@@ -1,5 +1,5 @@
 <?php 
-require_once('/Applications/MAMP/htdocs/Bibliotech/view/head/head.php');
+require_once('C:/xampp/htdocs/Bibliotech/view/head/head.php');
 
 ?>
 
@@ -8,6 +8,6 @@ require_once('/Applications/MAMP/htdocs/Bibliotech/view/head/head.php');
 <h1>aqui hay algo</h1>
 
 <?php 
-require_once('/Applications/MAMP/htdocs/Bibliotech/view/head/footer.php');
+require_once('C:/xampp/htdocs/Bibliotech/view/head/footer.php');
 
 ?>
