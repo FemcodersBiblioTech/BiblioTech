@@ -5,7 +5,7 @@ class bookRegisterModel {
 
     private $PDO;
     public function __construct(){
-        require_once('/Applications/MAMP/htdocs/02_TutorialCRUD/config/db.php');
+        require_once('/Applications/MAMP/htdocs/BiblioTech/config/db.php');
 
         $con = new db();
         $this->PDO = $con->conexion();

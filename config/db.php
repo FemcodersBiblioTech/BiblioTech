@@ -4,7 +4,7 @@ class db{
 
     private $host = 'localhost';
     private $dbname = 'library';
-    private $user = 'root' ;
+    private $user = 'root' ; /*esto no se si dejarlo vacio o dejarlo*/
     private $password = 'root';
 
     public function conexion(){

@@ -1,5 +1,5 @@
 <?php 
-require_once('/Applications/MAMP/htdocs/02_TutorialCRUD/view/head/head.php');
+require_once('/Applications/MAMP/htdocs/Bibliotech/view/head/head.php');
 
 ?>
 
@@ -44,6 +44,6 @@ require_once('/Applications/MAMP/htdocs/02_TutorialCRUD/view/head/head.php');
 
 
 <?php 
-require_once('/Applications/MAMP/htdocs/02_TutorialCRUD/view/head/footer.php');
+require_once('/Applications/MAMP/htdocs/Bibliotech/view/head/footer.php');
 
 ?>

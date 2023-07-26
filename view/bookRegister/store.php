@@ -1,6 +1,6 @@
 <?php
 
-require_once("/Applications/MAMP/htdocs/02_TutorialCRUD/controller/bookRegisterController.php");
+require_once("/Applications/MAMP/htdocs/Bibliotech/controller/bookRegisterController.php");
 
 $obj = new bookRegisterController();
 

@@ -6,7 +6,7 @@ class bookRegisterController{
 
     public function __construct(){
 
-        require_once ("/Applications/MAMP/htdocs/02_TutorialCRUD/model/bookRegisterModel.php");
+        require_once ("/Applications/MAMP/htdocs/BiblioTech/model/bookRegisterModel.php");
         $this->model = new bookRegisterModel();
         
     }
