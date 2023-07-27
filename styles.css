@@ -12,10 +12,47 @@ body {
     color: var(--text);
     margin: 0%;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 20px 0px 20px; 
+
+}
+.logo-image {
+ width: 40%;
+
+}
+
+.container-input {
+    display: flex;
+}
+
+.search {
+    border: 1px solid var(--icon-buttons-color);
+    border-radius: 5px 0px 0px 5px;
+    width: 150px;
+    height: 36px;
+    
+}
+
+.button {
+    width: 69px;
+    height: 40px;
+    background-color: var(--icon-buttons-color);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
 .box {
     color: var(--background);
     font-weight: 500;
     background-color: var(--text);
+    
 }
 .flexbox {
     display: flex;

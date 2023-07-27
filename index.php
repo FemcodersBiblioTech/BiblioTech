@@ -12,7 +12,16 @@
 
 <body>
     <header>
-        <img src="./assets/Logo.svg" />
+        <div class= "header">
+            <img class= "logo-image" src="./assets/Logo.svg" />
+            <div>
+                <form class= "container-input" action="" method="GET">
+                    <input class= "search" type="text" name="query" placeholder="Buscar">
+                    <button class= "button"type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        
     </header>
     <?php
 require('Controller/SeeData.php');
