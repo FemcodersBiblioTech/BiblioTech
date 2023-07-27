@@ -39,9 +39,9 @@ En esta App desarrollamos un CRUD con PHP vanilla conectado a una base de datos 
 <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
 <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" width="40" heigth="40"/> </div>
 
-<!--## UI
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)-->
+## UI
+[Sistema de diseño y maquetación version Desktop y Mobile](https://www.figma.com/file/cAg8SZWHaiQP6o4rJb0KCT/Bilblio-Tech?type=design&node-id=0%3A1&mode=design&t=jWLsmlT0VinF3Oy5-1)
 
 
 ## Documentation
