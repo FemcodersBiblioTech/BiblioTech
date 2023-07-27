@@ -13,7 +13,7 @@
 <body>
     <?php
 require('View/Header.php'); 
-require('View/SeeData.php');
+require('View/FormSave.php');
 require('View/Footer.php');
 ?>
 </body>

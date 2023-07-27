@@ -15,37 +15,35 @@
 </head>
 
 <body>
-<?php
+    <?php
 require('View/Header.php'); 
 ?>
-    <a  class="delete-button" href="index.php">Cancelar</a>
-    <form class="edit-form-container" action='update.php' method='POST' autocomplete="off" enctype='multipart/form-data'>
+    <form class="form" action='update.php' method='POST' autocomplete="off" enctype='multipart/form-data'>
+        <div class="end">
+            <a href=" index.php">
+                <img src="./assets/CloseButton.svg">
+            </a>
+        </div>
 
-        
         <label for='InputTitle'>Titulo</label>
         <input type='text' name='title' value="<?php echo $book['title']?>" required id=" InputTitle">
-        <div>
-            <label for="InputAuthor">Autor:</label>
-            <input name="author" value="<?php echo $book['author']?>" required type="text" id="InputAuthor">
-        </div>
-        <div>
-            <label for="InputYear">Año:</label>
-            <input type="number" name="year" value="<?php echo $book['year']?>" required id="InputYear">
-        </div>
-        <div>
-            <label for="InputISBN">ISBN:</label>
-            <input type="text" name="isbn" value="<?php echo $book['isbn']?>" required id="InputISBN">
-        </div>
-        <div>
-            <label for="InputDescription">Descripcion:</label>
-            <textarea name="description" required id="InputDescription"><?php echo $book['description']?></textarea>
-        </div>
-        <div>
-            <label for="InputImage">Cambiar imagen:</label>
-            <input type='file' name='image' id="InputImage" />
-            <input type='url' name='URL' id="InputURL" />
-        </div>
-        <input type='submit' name='Guardar' />
+        <label for="InputAuthor">Autor:</label>
+        <input name="author" value="<?php echo $book['author']?>" required type="text" id="InputAuthor">
+
+        <label for="InputYear">Año:</label>
+        <input type="number" name="year" value="<?php echo $book['year']?>" required id="InputYear">
+        <label for="InputISBN">ISBN:</label>
+        <input type="text" name="isbn" value="<?php echo $book['isbn']?>" required id="InputISBN">
+
+        <label for="InputDescription">Descripcion:</label>
+        <textarea name="description" required id="InputDescription"><?php echo $book['description']?></textarea>
+
+        <label for="InputImage">Cambiar imagen:</label>
+        <input type='url' name='URL' id="InputURL" placeholder="URL" />
+        <p>o</p>
+        <input type='file' name='image' id="InputImage" />
+        <div class="fakeInput">Elegir file</div>
+        <div class="center"><input type='submit' name='Guardar' value="Guardar" class="submit" /></div>
     </form>
     <?php
     require('View/Footer.php');

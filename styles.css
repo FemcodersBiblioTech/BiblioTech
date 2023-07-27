@@ -10,7 +10,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background);
     color: var(--text);
-    margin: 0%;
+    width: 100%;
+    padding: 0;
 }
 
 
@@ -19,11 +20,10 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 30px 20px 0px 20px; 
-
+    align-items: center;
 }
 .logo-image {
- width: 38%;
-
+ width: 10em;
 }
 
 .container-input {
@@ -65,8 +65,8 @@ body {
 .container-footer{
     display: flex;
     justify-content: space-between;
-    width: 105%;
-
+    width: 100%;
+    margin: 0;
 }
 
 .box {
@@ -143,16 +143,7 @@ a {
     font-size: 18px
 }
 
-.edit-button {
-    color: var(--icon-buttons-color);
-    font-weight: 400;
-    font-size: 20px;
-}
-
 .delete-button {
-    color: var(--accent-color);
-    font-weight: 400;
-    font-size: 20px;
     margin-left: 20px;
 }
 
@@ -233,4 +224,25 @@ div.fakeInput{
     justify-content: center;
     align-items: center;
 
+}
+.createButtonDesk{
+    background-color: var(--accent-color);
+    padding: 1em 2em;
+    border-radius: 10px;
+    color: var(--background);
+}
+.createButtonDesk:hover{
+    background-color: var(--icon-buttons-color);
+}
+.pagination{
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.pages{
+    margin: 10px;
+}
+.description{
+    margin-top: 2em;
 }
