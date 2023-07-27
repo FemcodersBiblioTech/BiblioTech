@@ -1,20 +1,26 @@
 <?php
-        $isbn = $_POST['isbn'];
-        $title = $_POST['title'];
-        $author = $_POST['author'];
-        $year = $_POST['year'];
-        $description = $_POST['description'];
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "library";
 
-        include('Model/Connection.php');
-        $con = new Connection();
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-        $updated = $con->updateBookByISBN($isbn, $title, $author, $year, $description);
+$isbn = $_POST['isbn'];
+$title = $_POST['title'];
+$author = $_POST['author'];
+$year = $_POST['year'];
+$description = $_POST['description'];
+$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
 
-        if ($updated) {
-            header('Location: index.php');
-            exit;
-        } else {
-            echo '<p>Failed to update the book information.</p>';
-        }
+/*$url = $_POST['URL'];*/
+    $sql = "UPDATE books SET isbn = '$isbn', image = '$image', title = '$title', author ='$author', year = '$year', description = '$description' WHERE isbn = '$isbn'";
 
+if ($conn->query($sql) === TRUE) {
+    header('Location: index.php');
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 ?>

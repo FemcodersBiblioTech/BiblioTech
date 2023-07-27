@@ -34,12 +34,5 @@ class Connection {
     $result = $this->con->query($query);
     return $result ? true : false;
 }
-public function updateBookByISBN($isbn, $title, $author, $year, $description)
-{
-    $query = "UPDATE books SET isbn = '$isbn', title = '$title', author ='$author', year = '$year', description = '$description' WHERE isbn = '$isbn'";
-    $result = $this->con->query($query);
-    return $result ? true : false;
-}
-
 }
 ?>

@@ -12,6 +12,7 @@ $author = $_POST['author'];
 $year = $_POST['year'];
 $description = $_POST['description'];
 $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+
 /*$url = $_POST['URL'];*/
 
 $sql = "INSERT INTO books (title, image, author, description, year, isbn) VALUES ('$title','$image','$author', '$description', '$year', '$isbn')";

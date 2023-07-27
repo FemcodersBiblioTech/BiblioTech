@@ -12,8 +12,7 @@
     <form action='Controller/SaveData.php' method='POST' enctype='multipart/form-data'>
         <div>
             <label for="InputTitle">Titulo</label>
-            <input type="text" name="title" required "
-                id=" InputTitle">
+            <input type="text" name="title" required id=" InputTitle">
 
             <div>
                 <label for="InputAuthor">Autor:</label>
@@ -28,15 +27,15 @@
                     <label for="InputISBN">ISBN:</label>
                     <input type="text" name="isbn" required id="InputISBN">
 
-                    <div >
+                    <div>
                         <label for="InputDescription">Descripcion:</label>
                         <textarea name="description" required id="InputDescription"></textarea>
 
                         <label for="InputImage">Imagen:</label>
-                        <input type='file' name='image' required id="InputImage"/>
-                        <input type='url' name='URL' id="InputURL"/>
+                        <input type='file' name='image' required id="InputImage" />
+                        <input type='url' name='URL' id="InputURL" />
                     </div>
-                        <input type='submit' name='Guardar' />
+                    <input type='submit' name='Guardar' />
     </form>
 </body>
 
