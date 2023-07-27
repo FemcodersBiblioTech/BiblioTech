@@ -1,16 +1,16 @@
 <h1 align="center">
-  <img src="insertar imagen de logo cuando este en assets" alt= "Logo coming soon" width=250px> 
+  <img src="/assets/Logo.svg" alt= "Logo BiblioTech en color naranja " width=250px> 
 </h1> 
 
 # BiblioTech 📕
 
-## Inicio
+<!--## Inicio
    1. [Información General](#Inicio)
    2. [UI](#UI)
    3. [Tecnologías](#tecnologías)
    4. [Herramientas](#herramientas)
    5. [Instalación](#instalación)
-   6. [Developers](#developers)
+   6. [Developers](#developers)-->
 
 
 ## Información General
@@ -21,15 +21,15 @@ En esta App desarrollamos un CRUD con PHP vanilla conectado a una base de datos 
 
 
 
-## Tech Stack 💻 
+## Tecnologías 💻 
 
 **Client:** 
  <div> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </div> 
  
 **Server:** 
-<div> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </div> 
+<div> <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="php logo" width="60"/>
+ <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/PhpMyAdmin_logo.svg" alt="Php My admin logo" width="60" height="40"/> </div> 
 
 ## Tools 🛠️
   <div>
@@ -39,9 +39,9 @@ En esta App desarrollamos un CRUD con PHP vanilla conectado a una base de datos 
 <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
 <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" width="40" heigth="40"/> </div>
 
-## UI
+<!--## UI
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)-->
 
 
 ## Documentation
