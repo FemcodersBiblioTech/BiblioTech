@@ -11,13 +11,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibliotech</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
+<?php
+require('View/Header.php'); 
+?>
+    <a  class="delete-button" href="index.php">Cancelar</a>
+    <form class="edit-form-container" action='update.php' method='POST' autocomplete="off" enctype='multipart/form-data'>
 
-    <form action='update.php' method='POST' autocomplete="off" enctype='multipart/form-data'>
-
-        <a href="index.php">Cancelar</a>
+        
         <label for='InputTitle'>Titulo</label>
         <input type='text' name='title' value="<?php echo $book['title']?>" required id=" InputTitle">
         <div>
@@ -43,6 +47,9 @@
         </div>
         <input type='submit' name='Guardar' />
     </form>
+    <?php
+    require('View/Footer.php');
+    ?>
 </body>
 
 </html>

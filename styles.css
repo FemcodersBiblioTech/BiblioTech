@@ -13,6 +13,7 @@ body {
     margin: 0%;
 }
 
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -87,3 +88,71 @@ body {
     width: 1.2em;
     margin-right: 0em;
 }
+
+a {
+    text-decoration: none;
+}
+.card-container {
+   width: 47%;
+   margin-top: 30px;
+
+}
+
+.card-title {
+ display: inline-block;  
+ font-size: 18px;
+ font-weight: 600;
+ color: var(--text);
+
+    
+}
+
+.card-image {
+    width: 100%;
+
+}
+
+.card-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text);
+    margin-top: 0px;
+}
+
+.data-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5em;
+    justify-content: space-between;
+
+}
+
+.book-detail-container {
+    padding: 5em 5em 5em 2em;
+}
+
+.book-title {
+    margin-top: 0px;
+    font-size: 18px
+}
+
+.edit-button {
+    color: var(--icon-buttons-color);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.delete-button {
+    color: var(--accent-color);
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.edit-form-container {
+    border: solid var(--icon-buttons-color);
+    border-radius: 20px;
+    padding: 15px 0px 15px 15px;
+}
+
