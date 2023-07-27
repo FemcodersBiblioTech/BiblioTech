@@ -12,9 +12,9 @@
         <div class= "header">
             <img class= "logo-image" src="./assets/Logo.svg" />
             <div>
-                <form class= "container-input" action="" method="GET">
+                <form class= "container-input" action="search.php" method="GET">
                      <input class= "search" type="text" name="query">
-                    <input value= 'Search' class= "button"type="submit"></input>
+                    <input value= 'Search' class= "button" type="submit"></input>
                 </form>
             </div>
         </div>

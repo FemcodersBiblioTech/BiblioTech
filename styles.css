@@ -41,6 +41,10 @@ body {
     background-position: 10px center;
 }
 
+.search:focus{
+    background-image: none;
+}
+
 .icono-lupa{
     position: absolute;
     right: 10px;
