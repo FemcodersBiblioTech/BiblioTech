@@ -62,24 +62,30 @@ body {
     color: white;
 
 }
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 105%;
+
+}
 
 .box {
     color: var(--background);
     font-weight: 500;
-    background-color: var(--text);
-    width: 390px;
-    
+    background-color: var(--text); 
 }
 .flexbox {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
+  
 }
 .flex {
     display: flex;
     list-style-type: none;
 }
+
 .margin-li{
     margin-right: 1em;
 }
