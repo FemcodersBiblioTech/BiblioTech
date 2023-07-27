@@ -7,9 +7,11 @@ if (isset($_GET['isbn'])) {
     $book = $con->getBookByISBN($isbn);
 
     if ($book) {
+        echo '<img src="data:image/jpg;base64,' . base64_encode($book['image']) . '"/>';
         echo '<h2>' . $book['title'] . '</h2>';
         echo '<p>Author: ' . $book['author'] . '</p>';
-        echo '<img src="data:image/jpg;base64,' . base64_encode($book['image']) . '"/>';
+        echo '<p>Año: ' . $book['year'] . '</p>';
+        echo '<p>ISBN: ' . $book['isbn'] . '</p>';
         echo '<p>Description: ' . $book['description'] . '</p>';
     } else {
         echo '<p>Book not found.</p>';
