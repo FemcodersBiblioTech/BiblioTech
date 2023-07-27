@@ -16,7 +16,7 @@
             <img class= "logo-image" src="./assets/Logo.svg" />
             <div>
                 <form class= "container-input" action="" method="GET">
-                    <span class="icono-lupa"><img src="./assets/Search.svg" alt=""></span>
+                    <!-- <span class="icono-lupa"><img src="./assets/Search.svg" alt=""></span> -->
                     <input class= "search" type="text" name="query">
                     <button class= "button"type="submit">Search</button>
                 </form>
@@ -28,7 +28,7 @@
 require('Controller/SeeData.php');
 require('View/FormSave.php');
 ?>
-    <footer>
+    <footer class= 'container-footer'>
         <div class='box'>
             <div class='flexbox'>
                 <ul class='flex'>
