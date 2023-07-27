@@ -10,11 +10,33 @@
 
 <body>
     <form action='Controller/SaveData.php' method='POST' enctype='multipart/form-data'>
-        <input type='text' name='title' placeholder='Title...' value='' />
-        <input type='file' name='image' />
+        <div>
+            <label for="InputTitle">Titulo</label>
+            <input type="text" name="title" required "
+                id=" InputTitle">
 
-        <input type='submit' name='Guardar' />
+            <div>
+                <label for="InputAuthor">Autor:</label>
+                <input name="author" required type="text" id="InputAuthor">
 
+                <div>
+
+                    <div>
+                        <label for="InputYear">Año:</label>
+                        <input type="number" name="year" required id="InputYear">
+                    </div>
+                    <label for="InputISBN">ISBN:</label>
+                    <input type="text" name="isbn" required id="InputISBN">
+
+                    <div >
+                        <label for="InputDescription">Descripcion:</label>
+                        <textarea name="description" required id="InputDescription"></textarea>
+
+                        <label for="InputImage">Imagen:</label>
+                        <input type='file' name='image' required id="InputImage"/>
+                        <input type='url' name='URL' id="InputURL"/>
+                    </div>
+                        <input type='submit' name='Guardar' />
     </form>
 </body>
 

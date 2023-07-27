@@ -18,6 +18,8 @@ class Connection {
         return $result;
     }
 
+    
+
     public function getBookByISBN($isbn){
         $isbn = $this->con->real_escape_string($isbn); 
         $query = "SELECT * FROM books WHERE isbn = '$isbn'";

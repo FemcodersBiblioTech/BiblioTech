@@ -15,7 +15,7 @@
         <img src="./assets/Logo.svg" />
     </header>
     <?php
-require('Controller/SeeData.php');
+require('View/SeeData.php');
 require('View/FormSave.php');
 ?>
     <footer>
