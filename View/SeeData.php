@@ -3,12 +3,17 @@ include('Model/Connection.php');
 $con = new Connection();
 $allBooks = $con->getAllBooks();
 foreach ($allBooks as $book) {
-    echo '<ul>';
-    echo '<li>' . $book['title'] . '</li>';
-    echo '<li>' . $book['author'] . '</li>';
+    echo '<div>';
     echo '<a href="book_info.php?isbn=' . urlencode($book['isbn']) . '">';
-    echo '<img src="data:image/jpg;base64,' . base64_encode($book['image']) . '"/>';
+    echo '<p>' . $book['title'] . '</p>';
+    echo '<p>' . $book['author'] . '</p>';
+    
+    if (!empty($book['image'])) {
+        echo '<img src="data:image/jpg;base64,' . base64_encode($book['image']) . '"/>';
+    } elseif (!empty($book['url'])) {
+        echo '<img src="' . $book['url'] . '"/>';
+    } 
     echo '</a>';
-    echo '</ul>';
+    echo '</div>';
 }
 ?>

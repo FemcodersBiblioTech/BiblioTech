@@ -32,7 +32,7 @@
                         <textarea name="description" required id="InputDescription"></textarea>
 
                         <label for="InputImage">Imagen:</label>
-                        <input type='file' name='image' required id="InputImage" />
+                        <input type='file' name='image' id="InputImage" />
                         <input type='url' name='URL' id="InputURL" />
                     </div>
                     <input type='submit' name='Guardar' />
