@@ -18,10 +18,9 @@
                 </form>
             </div>
         </div>
-        
     </header> 
-    </body>
-</html>
+   
+<div class= "book-detail-container">
 <?php
 if (isset($_GET['isbn'])) {
     $isbn = $_GET['isbn'];
@@ -33,18 +32,19 @@ if (isset($_GET['isbn'])) {
     if ($book) {
         echo '<img src="data:image/jpg;base64,' . base64_encode($book['image']) . '"/>';
         echo '<h2>' . $book['title'] . '</h2>';
-        echo '<p>Author: ' . $book['author'] . '</p>';
-        echo '<p>Año: ' . $book['year'] . '</p>';
-        echo '<p>ISBN: ' . $book['isbn'] . '</p>';
-        echo '<p>Description: ' . $book['description'] . '</p>';
-        echo '<a href="formEdition.php?isbn=' .  $book['isbn'] .  '">Editar</a>';
-        echo '<a href="delete.php?isbn=' .  $book['isbn'] .  '">Borrar</a>';
+        echo '<p class="book-title">Author: ' . $book['author'] . '</p>';
+        echo '<p class="book-title">Año: ' . $book['year'] . '</p>';
+        echo '<p class="book-title">ISBN: ' . $book['isbn'] . '</p>';
+        echo '<p class="book-title">Description: ' . $book['description'] . '</p>';
+        echo '<a class="edit-button" href="formEdition.php?isbn=' .  $book['isbn'] .  '">Edit</a>';
+        echo '<a class="delete-button" href="delete.php?isbn=' .  $book['isbn'] .  '">Delete</a>';
     } else {
         echo '<p>Book not found.</p>';
     }
 } else {
     echo '<p>No book selected. Please go back and select a book.</p>';
 }
-
-
 ?>
+</div>
+ </body>
+</html>
