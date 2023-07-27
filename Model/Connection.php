@@ -18,10 +18,7 @@ class Connection {
         return $result;
     }
 
-    
-
     public function getBookByISBN($isbn){
-        $isbn = $this->con->real_escape_string($isbn); 
         $query = "SELECT * FROM books WHERE isbn = '$isbn'";
         $result = $this->con->query($query);
 
@@ -31,5 +28,18 @@ class Connection {
             return null; 
         }
     }
+    public function deleteBookByISBN($isbn)
+{
+    $query = "DELETE FROM books WHERE isbn = '$isbn'";
+    $result = $this->con->query($query);
+    return $result ? true : false;
+}
+public function updateBookByISBN($isbn, $title, $author, $year, $description)
+{
+    $query = "UPDATE books SET isbn = '$isbn', title = '$title', author ='$author', year = '$year', description = '$description' WHERE isbn = '$isbn'";
+    $result = $this->con->query($query);
+    return $result ? true : false;
+}
+
 }
 ?>

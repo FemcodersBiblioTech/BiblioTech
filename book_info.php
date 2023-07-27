@@ -14,6 +14,8 @@ if (isset($_GET['isbn'])) {
         echo '<p>Año: ' . $book['year'] . '</p>';
         echo '<p>ISBN: ' . $book['isbn'] . '</p>';
         echo '<p>Description: ' . $book['description'] . '</p>';
+        echo '<a href="formEdition.php?isbn=' .  $book['isbn'] .  '">Editar</a>';
+        echo '<a href="delete.php?isbn=' .  $book['isbn'] .  '">Borrar</a>';
     } else {
         echo '<p>Book not found.</p>';
     }
@@ -21,7 +23,5 @@ if (isset($_GET['isbn'])) {
     echo '<p>No book selected. Please go back and select a book.</p>';
 }
 
-echo '<a href="formEdition.php?isbn=' .  $row['isbn'] .  '">Editar</a>';
-echo '<a href="delete.php?isbn=' .  $row['isbn'] .  '">Borrar</a>';
 
 ?>
