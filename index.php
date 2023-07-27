@@ -16,7 +16,8 @@
             <img class= "logo-image" src="./assets/Logo.svg" />
             <div>
                 <form class= "container-input" action="" method="GET">
-                    <input class= "search" type="text" name="query" placeholder="Buscar">
+                    <span class="icono-lupa"><img src="./assets/Search.svg" alt=""></span>
+                    <input class= "search" type="text" name="query">
                     <button class= "button"type="submit">Search</button>
                 </form>
             </div>
