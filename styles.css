@@ -162,3 +162,75 @@ a {
     padding: 15px 0px 15px 15px;
 }
 
+
+/*form styles*/
+
+.form{
+    width: 40%;
+    margin: 5em auto;
+    padding: 2em 3em;
+    border: 1px solid var(--text);
+    border-radius: 2em;
+
+}
+.form input, .form label, .form textarea, .form div {
+    width: 100%;
+    height: 2.5em;
+}
+.form input, .form textarea, div.fakeInput {
+background-color: var(--background);
+    border: 1px solid var(--text);
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.form input:focus,
+.form textarea:focus{
+    background-color: white;
+}
+input.submit{
+    background-color: var(--accent-color);
+    width: 8em;
+    height: 3em;
+    border: none;
+    color: var(--background);
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 0.3em;
+}
+input.submit:hover{
+    background-color: #005792;
+}
+div.center{
+    width: 100%;
+    text-align: center;
+}
+.end{
+    text-align: end;
+}
+.form p{
+    text-align: center;
+    margin: 0 0 0.5em 0;
+}
+.form input[type="file"]{
+    opacity: 0;
+}
+.form input[type="file"]:hover{
+cursor: pointer;    
+}
+.form input::placeholder{
+    margin-left: 1em;
+    color: var(--icon-buttons-color);
+    padding-left: 1em;
+}
+.form textarea{
+    height: 5em;
+}
+div.fakeInput{
+    margin-top: -50px;
+    background-color: var(--icon-buttons-color);
+    color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
