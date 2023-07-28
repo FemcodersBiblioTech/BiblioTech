@@ -6,12 +6,17 @@
     --icon-buttons-color: #005792;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background);
     color: var(--text);
     width: 100%;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 
@@ -38,7 +43,7 @@ header div{
 .search {
     border: 1px solid var(--icon-buttons-color);
     border-radius: 5px 0px 0px 5px;
-    width: 150px;
+    width: 8em;
     height: 36px;
     background-image: url("./assets/Search.svg");
     background-repeat: no-repeat;
@@ -84,11 +89,16 @@ header div{
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
+    padding-left: 0px;
   
 }
 .flex {
     display: flex;
     list-style-type: none;
+    list-style-position: outside;
+    /* padding-left: 1em; */
+    
+    
 }
 
 .margin-li{
