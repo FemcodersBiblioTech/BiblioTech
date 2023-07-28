@@ -2,7 +2,7 @@
     <div class='box'>
         <div class='flexbox'>
             <ul class='flex'>
-                <li>About us</li>
+                <li class='margin-li'>About us</li>
                 <li>Contact</li>
             </ul>
             <ul class='flex'>

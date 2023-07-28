@@ -275,6 +275,9 @@ div.fakeInput{
     .form {
         width: 60%;
     }
+        .search {
+            width: 13em;
+        }
 }
 @media only screen and (min-width: 1040px) {
     
@@ -302,5 +305,8 @@ width: 250px;
 }
 .form {
     width: 45%;
+}
+.search{
+    width: 20em;
 }
 }
