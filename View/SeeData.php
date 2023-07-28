@@ -25,7 +25,7 @@ foreach ($currentBooks as $book) {
     echo '<p class="card-subtitle" >' . $book['author'] . '</p>';
     
     if (!empty($book['image'])) {
-        echo '<img class="card-image" src="data:image/jpg;base64,' . base64_encode($book['image']) . '"/>';
+        echo '<img class="card-image card-image-desktop" src="data:image/jpg;base64,' . base64_encode($book['image']) . '"/>';
     } elseif (!empty($book['url'])) {
         echo '<img src="' . $book['url'] . '"/>';
     } 

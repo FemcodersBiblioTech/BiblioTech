@@ -20,18 +20,25 @@ require('View/Header.php'); ?>
     include('Model/Connection.php');
     $con = new Connection();
     $book = $con->getBookByISBN($isbn);
+    echo '<div class="flexbox-media">';
 if (!empty($book['image'])) {
         echo '<img class="card-image" src="data:image/jpg;base64,' . base64_encode($book['image']) . '"/>';
     } elseif (!empty($book['url'])) {
         echo '<img src="' . $book['url'] . '"/>';
-    }         echo '<h2>' . $book['title'] . '</h2>';
+    }    
+        echo '<div class="half-box">';  
+        echo '<h2>' . $book['title'] . '</h2>';
         echo '<p class="book-title"><b>Author:</b> ' . $book['author'] . '</p>';
         echo '<p class="book-title"><b>Año:</b> ' . $book['year'] . '</p>';
         echo '<p class="book-title"><b>ISBN:</b> ' . $book['isbn'] . '</p>';
         echo '<a class="edit-button" href="formEdition.php?isbn=' .  $book['isbn'] .  '"><img src="./assets/EditButton.svg"></a>';
         echo '<a class="delete-button" href="delete.php?isbn=' .  $book['isbn'] .  '"><img src="./assets/DeleteButton.svg"></a>';
         echo '<p class="book-title description"><b>Description:</b></p><p> ' . $book['description'] . '</p>';
-        
+        echo ' <a href="index.php">
+                <img src="./assets/Arrow2.svg">Volver
+            </a>';
+        echo '</div>';
+    echo '<div>';
 ?>
     </div>
 </body>
