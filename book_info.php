@@ -22,7 +22,7 @@ require('View/Header.php'); ?>
     $book = $con->getBookByISBN($isbn);
     echo '<div class="flexbox-media">';
 if (!empty($book['image'])) {
-        echo '<img class="card-image" src="data:image/jpg;base64,' . base64_encode($book['image']) . '"/>';
+        echo '<img class="card-image card-image-tablet" src="data:image/jpg;base64,' . base64_encode($book['image']) . '"/>';
     } elseif (!empty($book['url'])) {
         echo '<img src="' . $book['url'] . '"/>';
     }    
