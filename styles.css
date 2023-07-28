@@ -22,6 +22,9 @@ body {
     padding: 30px 20px 0px 20px; 
     align-items: center;
 }
+header div{
+    display: flex;
+}
 .logo-image {
  width: 10em;
 }
@@ -220,9 +223,11 @@ div.fakeInput{
 }
 .createButtonDesk{
     background-color: var(--accent-color);
-    padding: 1em 2em;
+    padding: 0.7em 2em;
+    margin-left: 2em;
     border-radius: 10px;
     color: var(--background);
+    display: none;
 }
 .createButtonDesk:hover{
     background-color: var(--icon-buttons-color);
@@ -231,7 +236,6 @@ div.fakeInput{
     display: flex;
     align-items:baseline;
     justify-content: center;
-    margin-bottom: 2em;
 }
 .pages{
     margin: 10px;
@@ -241,4 +245,14 @@ div.fakeInput{
 }
 .createButtonMobile{
     text-align: right;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+@media only screen and (min-width: 556px) {
+    .createButtonDesk {
+            display: block;
+        }
+        .createButtonMobile {
+            display: none;
+        }
 }
