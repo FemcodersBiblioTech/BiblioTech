@@ -4,14 +4,6 @@
 
 # BiblioTech 📕
 
-<!--## Inicio
-   1. [Información General](#Inicio)
-   2. [UI](#UI)
-   3. [Tecnologías](#tecnologías)
-   4. [Herramientas](#herramientas)
-   5. [Instalación](#instalación)
-   6. [Developers](#developers)-->
-
 
 ## Información General
 BiblioTech es un proyecto colaborativo en el que desarrollamos una app para el inventario de una biblioteca.  Entre sus funcionalidades incluimos la posibilidad de añadir nuevos registros, actualizarlos y/o borrarlas. 
