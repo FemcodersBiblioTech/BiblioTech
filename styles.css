@@ -15,6 +15,7 @@ body {
 }
 
 
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -62,14 +63,19 @@ body {
     color: white;
 
 }
-.container-footer {
+footer .caja-footer{
     width: 100%;
     margin: 0;
     color: var(--background);
-    font-weight: 500;
-    background-color: red !important;
+    font-weight: 300;
+    background-color: var(--accent-color);
     text-align: center;
 }
+
+/*footer{
+    background-color: var(--text);
+    width: 100%;
+}*/
 
 .box {
     color: var(--background);
@@ -242,3 +248,4 @@ div.fakeInput{
 .createButtonMobile{
     text-align: right;
 }
+
