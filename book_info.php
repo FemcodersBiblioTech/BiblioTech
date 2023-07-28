@@ -34,9 +34,9 @@ if (!empty($book['image'])) {
         echo '<a class="edit-button" href="formEdition.php?isbn=' .  $book['isbn'] .  '"><img src="./assets/EditButton.svg"></a>';
         echo '<a class="delete-button" href="delete.php?isbn=' .  $book['isbn'] .  '"><img src="./assets/DeleteButton.svg"></a>';
         echo '<p class="book-title description"><b>Description:</b></p><p> ' . $book['description'] . '</p>';
-        echo ' <a href="index.php">
+        echo '<a href="index.php">
                 <img src="./assets/Arrow2.svg">Volver
-            </a>';
+            </a></div>';
         echo '</div>';
     echo '<div>';
 ?>
