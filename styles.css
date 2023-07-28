@@ -62,11 +62,13 @@ body {
     color: white;
 
 }
-.container-footer{
-    display: flex;
-    justify-content: space-between;
+.container-footer {
     width: 100%;
     margin: 0;
+    color: var(--background);
+    font-weight: 500;
+    background-color: red !important;
+    text-align: center;
 }
 
 .box {
@@ -146,15 +148,6 @@ a {
 .delete-button {
     margin-left: 20px;
 }
-
-.edit-form-container {
-    border: solid var(--icon-buttons-color);
-    border-radius: 20px;
-    padding: 15px 0px 15px 15px;
-}
-
-
-/*form styles*/
 
 .form{
     width: 40%;
@@ -245,4 +238,7 @@ div.fakeInput{
 }
 .description{
     margin-top: 2em;
+}
+.createButtonMobile{
+    text-align: right;
 }

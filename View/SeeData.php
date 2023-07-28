@@ -47,4 +47,5 @@ if ($totalPages > 1) {
     }
 }
 echo '</div>';
+echo'<div class="createButtonMobile"><a href="./createBook.php"><img src="./assets/AddButton.svg" ></a></div>';
 ?>

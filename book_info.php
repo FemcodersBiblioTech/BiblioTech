@@ -10,28 +10,16 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <img class="logo-image" src="./assets/Logo.svg" />
-            <div>
-                <form class="container-input" action="" method="GET">
-                    <input class="search" type="text" name="query">
-                    <input value='Search' class="button" type="submit"></input>
-                </form>
-            </div>
-        </div>
-    </header>
+    <?php
+require('View/Header.php'); ?>
 
     <div class="book-detail-container">
         <?php
-if (isset($_GET['isbn'])) {
     $isbn = $_GET['isbn'];
 
     include('Model/Connection.php');
     $con = new Connection();
     $book = $con->getBookByISBN($isbn);
-
-    if ($book) {
 if (!empty($book['image'])) {
         echo '<img class="card-image" src="data:image/jpg;base64,' . base64_encode($book['image']) . '"/>';
     } elseif (!empty($book['url'])) {
@@ -44,12 +32,6 @@ if (!empty($book['image'])) {
         echo '<a class="delete-button" href="delete.php?isbn=' .  $book['isbn'] .  '"><img src="./assets/DeleteButton.svg"></a>';
         echo '<p class="book-title description"><b>Description:</b></p><p> ' . $book['description'] . '</p>';
         
-    } else {
-        echo '<p>Book not found.</p>';
-    }
-} else {
-    echo '<p>No book selected. Please go back and select a book.</p>';
-}
 ?>
     </div>
 </body>

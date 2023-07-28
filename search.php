@@ -12,6 +12,8 @@
 
 <body>
     <?php
+require('View/Header.php'); ?>
+    <?php
 $servername = "localhost";
 $username = "root";
 $password = "root";

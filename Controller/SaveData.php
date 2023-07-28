@@ -25,9 +25,9 @@ $url = '';
 $sql = "INSERT INTO books (title, image, author, description, year, isbn, URL) VALUES ('$title','$image','$author', '$description', '$year', '$isbn','$url')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+echo "New record created successfully";
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();
